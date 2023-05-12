@@ -1,0 +1,70 @@
+/* Reset some default styles */
+body, form, h1, label, input, select {
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+    color:#007bff;
+    padding:20px;
+}
+
+/* Add some spacing and center the form */
+form {
+    margin: 50px auto;
+    max-width: 600px;
+    padding: 20px;
+    border: none;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Add some spacing to form rows and columns */
+.form-row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.form-column {
+    width: 50%;
+    float: left;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+/* Add some additional styles to form inputs */
+label, input, select {
+    width: 100%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    height: 40px; /* Increased height for all text fields */
+}
+
+select {
+    padding: 10px;
+    border: none;
+    background-color: #fff;
+    background-image: url('https://cdn2.iconfinder.com/data/icons/icomoon-free-1/32/arrow-down-5-512.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 20px;
+    padding-right: 30px;
+}
+
+input[type="submit"] {
+    margin: 20px auto; /* Update margin to center horizontally within the form */
+    display: block;
+    width: 30%;
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
