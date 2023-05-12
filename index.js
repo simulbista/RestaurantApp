@@ -14,9 +14,9 @@ const MongoDAO = require("./mongoDAO.js");
 const mongoDAOinstance = new MongoDAO();
 const currentDate = new Date();
 
-// mongodb atlast connection uri
+// mongodb atlast connection uri (change username and password in the uri to the actual mongodb credential)
 const uri =
-  "mongodb+srv://simul:pas$w0rD@cluster0.xj2wfdh.mongodb.net/?retryWrites=true&w=majority";
+  "mongodb+srv://username:password@cluster0.xj2wfdh.mongodb.net/?retryWrites=true&w=majority";
 
 //for thunder client
 const bodyParser = require("body-parser");
